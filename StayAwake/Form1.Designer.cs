@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -36,7 +37,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(68, 12);
+            this.button1.Location = new System.Drawing.Point(103, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -52,21 +53,24 @@
             // richTextBox1
             // 
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.richTextBox1.Location = new System.Drawing.Point(33, 41);
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 49);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(149, 33);
+            this.richTextBox1.Size = new System.Drawing.Size(261, 32);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Moves the mouse every second to Stay Awake";
+            this.richTextBox1.Text = "Moves the mouse every second to Stay Awake Automatically closes at 7am";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(215, 86);
+            this.ClientSize = new System.Drawing.Size(285, 93);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "StayAwake";
+            this.Text = "  Stay Awake";
             this.ResumeLayout(false);
 
         }

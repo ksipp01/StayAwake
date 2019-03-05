@@ -26,6 +26,7 @@ namespace StayAwake
                 Program.MoveMouse = false;
                 button1.BackColor = Color.Red;
                 timer1.Enabled = false;
+                this.TopMost = false;
                 return;
             }
             if (Program.MoveMouse == false)
@@ -34,15 +35,18 @@ namespace StayAwake
                 button1.BackColor = Color.Lime;
                 timer1.Enabled = true;
                 button1.Text = "Stop";
+                this.TopMost = true;
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (Program.MoveMouse == false)
-            StayAwake.Move.Mouse(0, 0);
+                   StayAwake.Move.Mouse(0, 0);
+            
             else
             {
+                
                 if (this.up)
                     StayAwake.Move.Mouse(4, 4);
                 else
@@ -51,7 +55,10 @@ namespace StayAwake
             }
             this.up = !this.up;
 
-               
+            if (DateTime.Now.Hour == 7 && DateTime.Now.Minute == 00)
+                Application.Exit();
+            
+
 
         }
     }
