@@ -60,7 +60,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(261, 58);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Moves the mouse every second to Stay Awake\nAutomatically closes at 7am\n\n© Kevin S" +
-    "ipprell";
+    "ipprell  3-2019";
             // 
             // Form1
             // 
