@@ -57,7 +57,7 @@ namespace StayAwake
 
             if (DateTime.Now.Hour == 7 && DateTime.Now.Minute == 00)
                 Application.Exit();
-            
+           //test commit 
 
 
         }
