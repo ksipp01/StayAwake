@@ -57,15 +57,16 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Location = new System.Drawing.Point(12, 49);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(261, 32);
+            this.richTextBox1.Size = new System.Drawing.Size(261, 58);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Moves the mouse every second to Stay Awake Automatically closes at 7am";
+            this.richTextBox1.Text = "Moves the mouse every second to Stay Awake\nAutomatically closes at 7am\n\n© Kevin S" +
+    "ipprell";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 93);
+            this.ClientSize = new System.Drawing.Size(285, 119);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
